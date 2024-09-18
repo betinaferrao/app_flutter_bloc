@@ -13,7 +13,7 @@ class MovieScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themeCubit = context.read<ThemeCubit>;
+    final themeCubit = context.read<ThemeCubit>();
     themeCubit.changeTheme(movie.genre);
     return Scaffold(
       body: Column(
